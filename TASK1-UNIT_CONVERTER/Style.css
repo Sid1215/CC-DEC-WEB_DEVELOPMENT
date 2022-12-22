@@ -1,0 +1,152 @@
+body {
+    padding-top: 20px;
+    background-color: #FED049;
+    
+  }
+
+  h1 {
+    color: #68B984;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .marq
+  {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+  h3{
+    margin-top: 1px;
+  }
+  
+  .converter-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .converter-wrapper input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .converter-wrapper span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .converter-wrapper span select {
+    background-color: #263648;
+    color: #fff;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: none; /* hide default arrow in chrome OSX */
+  }
+  
+  .converter-wrapper span::before,
+  .converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .converter-wrapper span::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 2em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+  }
+  
+  .converter-wrapper span::before { /*  Custom dropdown arrow cover */
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: #202E3C;
+  }
+  .convert
+  {
+    padding-right: 50px;
+    padding-left: 240px;
+    margin-top: 30px;
+
+  }
+  .converter-side-a,
+  .converter-side-b {
+    float: left;
+    margin-top: 35px;
+    box-sizing: border-box;
+    width: 45%;
+  }
+  
+  .converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: #FFF;
+    font-size: 2.4em;
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .converter-side-a {
+    padding-right: 20px;
+  }
+  
+  .converter-side-b {
+    padding-left: 20px;
+  }
+  footer{
+    position: absolute;
+    bottom: 0px;
+    top: 1500px;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: 200px;
+    width: 100vw;
+    padding-top: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  text-align: center;
+ 
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
