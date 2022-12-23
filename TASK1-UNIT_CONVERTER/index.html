@@ -1,132 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
   <title>All in One Unit Convertor</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="file.css" rel="stylesheet">
-  <script type="text/javascript" src="unit.js">
-    
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Boot CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="unit.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    .column {
-      float: left;
-      width: 24.00%;
-      padding: 10px;
-      max-width: 1200px;
-      margin-right: 10px;
-    
-    }
-    
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: " ";
-      clear: both;
-      display: table;
-    }
-    </style>
+    body{font-family:"Georgia, 'Times New Roman', Times, serif";}
+    .fontClass{font-family: 'Times New Roman', Times, serif;font-weight: 700;margin-top: 50px;}
+    .alert{background-color: black;}
+  </style>
 </head>
-<body>
-    <h1 style="color: black; font-family: Georgia, 'Times New Roman', Times, serif">CONVERTER+ : <br>AN UNIT CONVERTER</h1>
-    <marquee class="marq" bgcolor="#222222" width="100%" direction="right" height="40px" >
-      <h3 style="color:white; text-align:center;">⭐⭐⭐⭐⭐⭐⭐⭐CODECLAUSE  TASK  1:  AN  UNIT  CONVERTER⭐⭐⭐⭐⭐⭐⭐⭐</h3>
-      </marquee>
-
-    <BR></BR>
-    
-    <div class="row">
-      <div class="column">
-        <lottie-player class="acc" src="https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
-        <h1 style="text-align: center; margin-left: 1px;">Acceleration</h1>
-      </div>
-      <div class="column">
-        <lottie-player class="area" src="https://assets8.lottiefiles.com/packages/lf20_4vpydkju.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-        <h1 style="text-align: center; margin-left: 5px;">Area</h1>
-      </div>
-      <div class="column">
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_nNG8M6.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>      
-        <h1>Electricity</h1>
-      </div>
-      <div class="column">
-        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jpk01aov.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-        <h1>Force</h1>
-        <br><br>
-
-      </div>
-
-
-  <div class="converter-wrapper">
-   
-    <form name="property_form">
-      <span>
-        <select class="select-property" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
-        </select>
-      </span>
-    </form>
-
-    <div class="convert">
-      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_b1cGf4.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" loop  autoplay></lottie-player>
+<body class="bg-warning">
+    <h2 class=" text-center text-dark bg-warning fontClass" style="margin-top: 40px;">CONVERTER+ :<br> AN UNIT CONVERTER</h2>
+    <div class="container-fluid"><br>
+        <marquee class="alert text-white "  direction="right"  >
+        <h5>⭐⭐⭐⭐⭐⭐⭐⭐CODECLAUSE  TASK  1:  AN  UNIT  CONVERTER⭐⭐⭐⭐⭐⭐⭐⭐</h5>
+        </marquee>
     </div>
-   
-    <div class="converter-side-a">
-      <form name="form_A" onSubmit="return false">
-        <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
-        <span>
-          <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
-          </select>
-        </span>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 text-center text-info">
+                <lottie-player class="acc" src="https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
+                <h3>Acceleration</h3>
+            </div>
+            <div class="col-sm-3 text-center text-info">
+                <lottie-player class="area" src="https://assets8.lottiefiles.com/packages/lf20_4vpydkju.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <h3>Area</h3>
+            </div>
+            <div class="col-sm-3 text-center text-info">
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_nNG8M6.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>      
+                <h3>Electricity</h3>
+            </div>
+            <div class="col-sm-3 text-center text-info">
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jpk01aov.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                <h3>Force</h3>
+                <br><br>
+            </div>
+        </div>
+      </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <form name="property_form">
+                Select Operation-
+                <select class="form-control bg-dark text-white" name="the_menu" onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+                </select>
+            </form>
+        </div>
+    <div class="col-sm-3"></div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="text-center col-sm-6">
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_b1cGf4.json"  style="height: 80px;" loop  autoplay></lottie-player>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+        <form name="form_A" onsubmit="return false">
+          <input type="number" placeholder="0" class="form-control" name="unit_input" maxlength="20" value="" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+          <br><select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)" class="form-control bg-dark text-white"></select>
+        </form>
+    </div>
+    <div class="col-sm-2 text-center">
+      <br><br>
+      <h3 class="text-white">=</h3>
+    </div>
+    <div class="col-sm-4">
+      <form name="form_B" onsubmit="return false">
+        <input type="text" class="form-control" name="unit_input" maxlength="20" placeholder="0" onkeyup="CalculateUnit(document.form_B, document.form_A)"><br>
+          <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)" class="form-control bg-dark text-white"></select>
       </form>
-    </div> <!-- /converter-side-a -->
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
     
-   <div class="converter-equals">
-     <p>=</p>
-   </div> <!-- /converter-side-a -->
-  
-    <div class="converter-side-b">
-      <form name="form_B" onSubmit="return false">
-        <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
-        <span>
-          <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
-          </select>
-        </span>
-      </form>
-    </div> <!-- /converter-side-b -->
-  </div><!-- /converter-wrapper -->
-
-  
+<br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 text-center text-info">
+          <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_rupg3acu.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+          <h3>Time</h3>
+        </div>
+        <div class="col-sm-3 text-center text-info">
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_uold6ze3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+          <h3>Pressure</h3>
+        </div>
+        <div class="col-sm-3 text-center text-info">
+          <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_wBcF24.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>      
+          <h3>Temperature</h3>
+        </div>
+        <div class="col-sm-3 text-center text-info">
+          <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_0oldmhje.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+          <h3>Speed</h3>
+        </div>
+    </div>
   </div>
-  <br><br><br>
-  <div class="column">
-    <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_rupg3acu.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    <h1>Time</h1>
-  </div>
-  <div class="column">
-    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_uold6ze3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    <h1>Pressure</h1>
-  </div>
-  <div class="column">
-    <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_wBcF24.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>      
-    <h1>Temperature</h1>
-  </div>
-  <div class="column">
-    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_0oldmhje.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    <h1>Speed</h1>
-  </div>
-
-  <footer>
-    <h3>CONVERTER+: AN UNIT CONVERTER</h3>
+<br><br>
+  <div class="alert text-white mb-0 text-center">
+    <h4>CONVERTER+: AN UNIT CONVERTER</h4>
     <p>CONVERTER+ IS AN ONLINE UNIT CONVETER WHICH CONVERTS THE UNITS OF VARIOUS FIELDS. </p>
-    <P> DESIGNED WITH HTML,CSS,JS</P>
-    
-    <p>copyright &copy;2022 CONVERTER+</p>
-  </footer>
+    DESIGNED WITH HTML,CSS,JS
+      <p>copyright &copy;2022 CONVERTER+</p>
+  </div>
 
 </body>
 </html>
-
-
